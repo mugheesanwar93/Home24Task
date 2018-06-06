@@ -69,7 +69,7 @@ public class ReviewScreenAdapter extends RecyclerView.Adapter<ReviewScreenAdapte
         return (null != articlesList ? articlesList.size() : 0);
     }
 
-    class ReviewScreenHolder extends RecyclerView.ViewHolder {
+    public class ReviewScreenHolder extends RecyclerView.ViewHolder {
         ImageView ivImage;
         TextView tvTitle;
         CheckBox cbLiked;

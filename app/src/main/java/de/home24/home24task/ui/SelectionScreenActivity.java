@@ -39,6 +39,7 @@ public class SelectionScreenActivity extends AppCompatActivity implements View.O
     private ProgressDialog progressDialog;
 
     int likeCounter = 0;
+    int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -170,9 +171,8 @@ public class SelectionScreenActivity extends AppCompatActivity implements View.O
 
     @SuppressLint("SetTextI18n")
     private void addData(boolean selection) {
-        int count = vpArticles.getCurrentItem();
 
-        if (count < articleList.size() - 1) {
+        if (count < articleList.size()) {
             vpArticles.setCurrentItem(getItem(+1), true);
             Articles articles = new Articles(
                     articleList.get(count).getSku(),
@@ -184,6 +184,7 @@ public class SelectionScreenActivity extends AppCompatActivity implements View.O
             if (selection) {
                 tvCounter.setText(++likeCounter + " / " + articleList.size());
             }
+            count++;
         } else {
             AppUtil.showToast(getApplicationContext(), getString(R.string.articles_finished));
             ivLike.setEnabled(false);
