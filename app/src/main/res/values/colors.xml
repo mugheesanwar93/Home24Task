@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#f45334</color>-->
+    <!--<color name="colorPrimaryDark">#f2573a</color>-->
+    <!--<color name="colorAccent">#344148</color>-->
+
+    <!--<color name="border">#535252</color>-->
+    <!--<color name="seperator">#1e1e1f</color>-->
+
+    <!--<color name="textColorPrimary">@android:color/white</color>-->
+    <!--<color name="textColorSecondary">@android:color/black</color>-->
+    <!--<color name="textColorCard">#d9d9d9</color>-->
+
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="bg">#FFCCBC</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#FFFFFF</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="border">#BDBDBD</color>
+</resources>
